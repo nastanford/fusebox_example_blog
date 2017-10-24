@@ -21,16 +21,23 @@
 		<circuit alias="display" path="view/display/" parent="" />
 		<circuit alias="layout" path="view/layout/" parent="" />
 		<circuit alias="app" path="controller/" relative="true" />
+	  <circuit alias="main" path="controller/main/" relative="true" />
+	  <circuit alias="vMain" path="view/main/" relative="true" />
+	<!-- Another way to use Fusebox
+	    <circuit alias="Common" path="Common/" parent="" />
+	    <circuit alias="CommonView" path="Common/View/" parent="" />
+	    <circuit alias="CommonModel" path="Common/Model/" parent="" />
+	    <circuit alias="CommonController" path="Common/Controller/" parent="" />
+	 -->
 	</circuits>
 
-	<!--
 	<classes>
-		<class alias="MyClass" type="component" classpath="path.to.SomeCFC" constructor="init" />
+		<class alias="book" type="component" classpath="model.book" constructor="init" />
+		<class alias="books" type="component" classpath="model.books" constructor="init" />
 	</classes>
-	-->
 
 	<parameters>
-		<parameter name="defaultFuseaction" value="app.welcome" />
+		<parameter name="defaultFuseaction" value="main.home" />
 		<!-- you may want to change this to development-full-load mode: -->
 		<parameter name="mode" value="development-circuit-load" />
 		<parameter name="conditionalParse" value="true" />

@@ -7,7 +7,7 @@
 	<cfset this.name = right(REReplace(getDirectoryFromPath(getCurrentTemplatePath()),'[^A-Za-z]','','all'),64) />
 	
 	<!--- enable debugging --->
-	<cfset FUSEBOX_PARAMETERS.debug = true />
+	<cfset FUSEBOX_PARAMETERS.debug = false />
 	
 	<!--- force the directory in which we start to ensure CFC initialization works: --->
 	<cfset FUSEBOX_CALLER_PATH = getDirectoryFromPath(getCurrentTemplatePath()) />

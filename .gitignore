@@ -11,6 +11,9 @@ db/sql
 javascripts/bundles
 stylesheets/bundles
 
+# Eclipse, CFEclipse or ColdFusion Builder files
+.settings
+
 # FuseBox files
 parsed
 

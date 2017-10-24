@@ -19,5 +19,9 @@
 	Could also modify the self location here:
 	<cfset myFusebox.setSelf("/myapp/start.cfm") />
 --->
-<cfset self = myFusebox.getSelf() />
-<cfset myself = myFusebox.getMyself() />
+<cfscript>
+  self = myFusebox.getSelf();
+  myself = myFusebox.getMyself();
+  application.title = "Fusebox Example Blog";
+</cfscript>
+
