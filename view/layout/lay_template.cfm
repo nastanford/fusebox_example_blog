@@ -1,60 +1,60 @@
-<cfsetting showDebugOutput = "false">
-<cfoutput>
-<!doctype html>
+<cfparam name="request.page.title" default="">
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Fusebox Example Blog</title>
-  <meta name="description" content="">
-  <meta name="author" content="Nathan Stanford">
-  <script src="includes/js/jquery-3.2.1.min.js"></script>
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <!-- Optional theme -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <!-- Custom styles for this template -->
-  <link href="includes/css/sticky-footer-navbar.css" rel="stylesheet">
-  <link href="includes/css/default.css?v=1#RandRange(1,1000000)#" rel="stylesheet">
-</head>
-<body>
-
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="##navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#self#">Fusebox Example Blog</a>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">          
-            <li id="main.home" <cfif fuseaction eq "main.home"> class="active"</cfif>><a href="#myself##xfa.home#">Home</a></li>
-            <li id="main.about" <cfif fuseaction eq "main.about"> class="active"</cfif>><a href="#myself##xfa.about#">About</a></li>
-            <li id="main.contact" <cfif fuseaction eq "main.contact"> class="active"</cfif>><a href="#myself##xfa.contact#">Contact</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
-    <br /><br /><br /><br />
-    <section>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title><cfoutput><cfif request.page.title neq ""> #request.page.title# | </cfif>#application.title#</cfoutput></title>
+    <!-- Bootstrap core CSS -->
+    <link href="includes/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="includes/css/blog-home.css" rel="stylesheet">
+    <link href="includes/css/default.css?v=1#RandRange(1,1000000)#" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Navigation -->
+   <cfoutput>#navbar#</cfoutput>
+    <!-- Page Content -->
     <div class="container">
-      <div class="starter-template">
-          #body#
-      </div>
-    </div><!-- /.container -->
-    </section>
+      <div class="row">
+      <cfoutput>#body#</cfoutput>
+        <!-- Sidebar Widgets Column -->
+        <div class="col-md-4">
+          <!-- Search Widget -->
+          <cfoutput>#search#</cfoutput>
+          <!-- Categories Widget -->
+          <cfoutput>#categories#</cfoutput>
+          <!-- Side Widget -->
+          <!-- Side Widget -->
+          <div class="card my-4">
+            <h5 class="card-header">Side Widget</h5>
+            <div class="card-body">
+              You can put anything you want inside of these side widgets. They are easy to use, and feature the new Bootstrap 4 card containers!
+            </div>
+          </div>
 
-    <footer class="footer footer-custom">
-      <div class="container">
-        <p>Fusebox Example Blog &copy; #year(now())#</p>
+        </div>
+
       </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; <cfoutput>#application.title# #year(now())#</cfoutput> </p>
+      </div>
+      <!-- /.container -->
     </footer>
 
-</body>
+    <!-- Bootstrap core JavaScript -->
+    <script src="includes/vendor/jquery/jquery.min.js"></script>
+    <script src="includes/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
 </html>
-</cfoutput> 

@@ -23,6 +23,9 @@
 		<xfa name="home" value="main.home" />
 		<xfa name="about" value="main.about" />
 		<xfa name="contact" value="main.contact" />
+		<do action="display.navbar" />
+		<do action="display.categories" />
+    <do action="display.search" />
 	</prefuseaction>
 	
 	<!--
@@ -30,17 +33,20 @@
 		to do all of its work:
 	-->
 	<fuseaction name="about">
+		<set name="request.page.title" value="About"/>
 		<do action="vMain.about" />  
 	</fuseaction>
 		
 	<fuseaction name="contact">
+		<set name="request.page.title" value="Contact"/>
 		<do action="vMain.contact" />  
 	</fuseaction>
 
 	<fuseaction name="home">
-		<invoke class="books" method="getAll" returnvariable="qryBooks"></invoke>
+		<set name="request.page.title" value="Home"/>
+    <do action="display.blogpost" />
+		  <invoke class="books" method="getAll" returnvariable="qryBooks"></invoke>
 		<do action="vMain.home" />  
 	</fuseaction>
-
 
 </circuit>
