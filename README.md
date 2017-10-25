@@ -28,8 +28,7 @@ rest of your application.
 
 
 
-| Blogpost |
-|---|---|
+# Blogpost 
     * id
     * title
     * body
@@ -38,8 +37,7 @@ rest of your application.
     * isactive
 
 
-| BlogUser |
-|---|---|
+# BlogUser 
     * email
     * name
     * datecreate
