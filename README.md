@@ -43,3 +43,33 @@ rest of your application.
     * datecreate
     * isActive
 
+Example Table Markdown
+
+# Table 1
+
+| Col 1 | Col 2 | Col 3|
+| --- | --- | --- |
+| Test 1 | Test 2 | Test 3 |
+| Test 1 | Test 2 | Test 3 |
+
+# Table 2
+
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
+
+# Table 3
+
+| Command | Description |
+| --- | --- |
+| git status | List all new or modified files |
+| git diff | Show file differences that haven't been staged |
+
+# Table 4
+
+| Left-aligned | Center-aligned | Right-aligned |
+| :---         |     :---:      |          ---: |
+| git status   | git status     | git status    |
+| git diff     | git diff       | git diff      |
+
