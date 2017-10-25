@@ -1,12 +1,12 @@
 
-# FuseBox ColdFusion Framework
+# Fusebox ColdFusion Framework
 
-This is build on the last version of the FuseBox ColdFusion Framework.  This was the first framework that was created for ColdFusion. This is an old Framework. Only learn this if you are maintaining old ColdFusion Code.
+This is build on the last version of the Fusebox ColdFusion Framework.  This was the first framework that was created for ColdFusion. This is an old Framework. Only learn this if you are maintaining old ColdFusion Code.
 
-## FuseBox Website and links
-* [FuseBox](http://www.fusebox.org)
-* [FuseBox Downloads](http://www.fusebox.org/index.cfm/fusebox-downloads/)
-* [FuseBox Documentation](http://www.fusebox.org/index.cfm/documentation/)
+## Fusebox Website and links
+* [Fusebox](http://www.Fusebox.org)
+* [Fusebox Downloads](http://www.Fusebox.org/index.cfm/Fusebox-downloads/)
+* [Fusebox Documentation](http://www.Fusebox.org/index.cfm/documentation/)
 
 ---
 
