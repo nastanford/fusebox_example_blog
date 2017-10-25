@@ -25,17 +25,23 @@ rest of your application.
 
 ## Example Database Tables 
 ---
-### blogpost
-* id
-* title
-* body
-* authorid
-* datecreated
-* isactive
 
-### BlogUser
-* email
-* name
-* datecreate
-* isActive
+
+
+| Blogpost |
+|---|---|
+    * id
+    * title
+    * body
+    * authorid
+    * datecreated
+    * isactive
+
+
+| BlogUser |
+|---|---|
+    * email
+    * name
+    * datecreate
+    * isActive
 
