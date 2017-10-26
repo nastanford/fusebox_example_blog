@@ -7,7 +7,6 @@
   <cfoutput>#blogpost#</cfoutput>
   <cfoutput>#blogpost#</cfoutput>
   <cfoutput>#blogpost#</cfoutput>
-
   <!-- Pagination -->
   <ul class="pagination justify-content-center mb-4">
     <li class="page-item">
