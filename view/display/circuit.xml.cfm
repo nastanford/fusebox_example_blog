@@ -12,5 +12,23 @@
 	<fuseaction name="sayHello">
 		<include template="dsp_hello" contentvariable="body" />
 	</fuseaction>
+
+	<fuseaction name="navbar">
+		<include template="dsp_navbar" contentvariable="navbar" />
+	</fuseaction>
+
+	<fuseaction name="categories">
+		<include template="dsp_categories" contentvariable="categories" />
+	</fuseaction>
+
+	<fuseaction name="search">
+		<include template="dsp_search" contentvariable="search" />
+	</fuseaction>
+
+	<fuseaction name="blogpost">
+		<include template="dsp_blogpost" contentvariable="blogpost" />
+	</fuseaction>
+  
+  
 	
 </circuit>
